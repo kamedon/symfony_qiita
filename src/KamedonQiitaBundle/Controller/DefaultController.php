@@ -14,6 +14,8 @@ class DefaultController extends Controller
      */
     public function indexAction()
     {
-        return array('name' => "hello world");
+        $this->get('memcache.default')->set('someKey', 'test', 100000);
+        $msg = $this->get('memcache.default')->get('someKey');
+        return array('name' => $msg);
     }
 }
