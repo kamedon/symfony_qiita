@@ -6,9 +6,16 @@ branches:
     - master
     - develop
 before_script:
+  - curl -s http://getcomposer.org/installer | php
   - printf "\n" | pecl install memcached
   - echo "extension=memcached.so" >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
-  - composer install -n --dev
+#  - composer install -n --dev
+  - php composer.phar install --dev --no-interaction
+#  - php composer.phar install --dev
+#  - php vendor/bin/coveralls -v
 script:
   - mkdir -p build/logs
   - phpunit -c app
+
+after_script:
+  - php vendor/satooshi/php-coveralls/composer/bin/coveralls -v

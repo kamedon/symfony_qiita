@@ -24,7 +24,8 @@
         "sensio/generator-bundle": "~2.3",
         "phpunit/phpunit": "4.4.*",
         "phpunit/phpunit-mock-objects": "2.3.*",
-        "phake/phake": "@stable"
+        "phake/phake": "@stable",
+        "satooshi/php-coveralls": "dev-master"
     },
     "scripts": {
         "post-root-package-install": [
