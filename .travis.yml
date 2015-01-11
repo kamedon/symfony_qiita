@@ -1,0 +1,14 @@
+language: php
+php:
+  - 5.5
+branches:
+  only:
+    - master
+    - develop
+before_script:
+  - printf "\n" | pecl install memcached
+  - echo "extension=memcached.so" >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
+  - composer install -n --dev
+script:
+  - mkdir -p build/logs
+  - phpunit -c app
