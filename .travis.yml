@@ -19,3 +19,9 @@ script:
 
 after_script:
   - php vendor/satooshi/php-coveralls/composer/bin/coveralls -v
+
+notifications:
+  email:
+    - hkamei06@gmail.com
+  on_success: always # default: change
+  on_failure: always
