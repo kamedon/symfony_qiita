@@ -1,0 +1,5 @@
+services:
+    my.blog.auth_listener:
+        class: KamedonQiitaBundle\EventListener\BeforeFilterControllerListener
+        tags:
+            - { name: kernel.event_listener, event: kernel.controller, method: onKernelController }

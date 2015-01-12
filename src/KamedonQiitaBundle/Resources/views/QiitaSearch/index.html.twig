@@ -13,4 +13,8 @@
     {{ form_end(searchForm) }}
 {% endblock %}
     {% block body %}
+        {{ form_errors(searchForm) }}
+        {% for r in res %}
+            {{ r.id }}
+        {% endfor %}
     {% endblock body %}
