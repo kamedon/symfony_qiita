@@ -66,6 +66,7 @@ class Item
 
     /**
      * Get id
+     * @codeCoverageIgnore
      *
      * @return integer
      */
@@ -76,6 +77,7 @@ class Item
 
     /**
      * Set body
+     * @codeCoverageIgnore
      *
      * @param string $body
      * @return Item
@@ -89,6 +91,7 @@ class Item
 
     /**
      * Get body
+     * @codeCoverageIgnore
      *
      * @return string
      */
@@ -99,6 +102,7 @@ class Item
 
     /**
      * Set postCreatedAt
+     * @codeCoverageIgnore
      *
      * @param \DateTime $postCreatedAt
      * @return Item
@@ -112,6 +116,7 @@ class Item
 
     /**
      * Get postCreatedAt
+     * @codeCoverageIgnore
      *
      * @return \DateTime
      */
@@ -122,6 +127,7 @@ class Item
 
     /**
      * Set itemId
+     * @codeCoverageIgnore
      *
      * @param string $itemId
      * @return Item
@@ -135,6 +141,7 @@ class Item
 
     /**
      * Get itemId
+     * @codeCoverageIgnore
      *
      * @return string
      */
@@ -145,6 +152,7 @@ class Item
 
     /**
      * Set title
+     * @codeCoverageIgnore
      *
      * @param string $title
      * @return Item
@@ -158,6 +166,7 @@ class Item
 
     /**
      * Get title
+     * @codeCoverageIgnore
      *
      * @return string
      */
@@ -168,6 +177,7 @@ class Item
 
     /**
      * Set postUpdatedAt
+     * @codeCoverageIgnore
      *
      * @param \DateTime $postUpdatedAt
      * @return Item
@@ -181,6 +191,7 @@ class Item
 
     /**
      * Get postUpdatedAt
+     * @codeCoverageIgnore
      *
      * @return \DateTime
      */
@@ -191,6 +202,7 @@ class Item
 
     /**
      * Set url
+     * @codeCoverageIgnore
      *
      * @param string $url
      * @return Item
@@ -204,6 +216,7 @@ class Item
 
     /**
      * Get url
+     * @codeCoverageIgnore
      *
      * @return string
      */

@@ -38,8 +38,9 @@ class Tag
 
     /**
      * Get id
+     * @codeCoverageIgnore
      *
-     * @return integer 
+     * @return integer
      */
     public function getId()
     {
@@ -48,6 +49,7 @@ class Tag
 
     /**
      * Set name
+     * @codeCoverageIgnore
      *
      * @param string $name
      * @return Tag
@@ -61,8 +63,9 @@ class Tag
 
     /**
      * Get name
+     * @codeCoverageIgnore
      *
-     * @return string 
+     * @return string
      */
     public function getName()
     {
@@ -71,6 +74,7 @@ class Tag
 
     /**
      * Set version
+     * @codeCoverageIgnore
      *
      * @param string $version
      * @return Tag
@@ -84,8 +88,9 @@ class Tag
 
     /**
      * Get version
+     * @codeCoverageIgnore
      *
-     * @return string 
+     * @return string
      */
     public function getVersion()
     {

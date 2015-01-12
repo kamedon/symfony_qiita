@@ -52,8 +52,9 @@ class User
 
     /**
      * Get id
+     * @codeCoverageIgnore
      *
-     * @return integer 
+     * @return integer
      */
     public function getId()
     {
@@ -62,6 +63,7 @@ class User
 
     /**
      * Set name
+     * @codeCoverageIgnore
      *
      * @param string $name
      * @return User
@@ -75,8 +77,9 @@ class User
 
     /**
      * Get name
+     * @codeCoverageIgnore
      *
-     * @return string 
+     * @return string
      */
     public function getName()
     {
@@ -85,6 +88,7 @@ class User
 
     /**
      * Set imageUrl
+     * @codeCoverageIgnore
      *
      * @param string $imageUrl
      * @return User
@@ -98,8 +102,9 @@ class User
 
     /**
      * Get imageUrl
+     * @codeCoverageIgnore
      *
-     * @return string 
+     * @return string
      */
     public function getImageUrl()
     {
@@ -108,6 +113,7 @@ class User
 
     /**
      * Set description
+     * @codeCoverageIgnore
      *
      * @param string $description
      * @return User
@@ -121,8 +127,9 @@ class User
 
     /**
      * Get description
+     * @codeCoverageIgnore
      *
-     * @return string 
+     * @return string
      */
     public function getDescription()
     {
@@ -131,6 +138,7 @@ class User
 
     /**
      * Set accountId
+     * @codeCoverageIgnore
      *
      * @param string $accountId
      * @return User
@@ -144,8 +152,9 @@ class User
 
     /**
      * Get accountId
+     * @codeCoverageIgnore
      *
-     * @return string 
+     * @return string
      */
     public function getAccountId()
     {

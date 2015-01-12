@@ -18,6 +18,9 @@ class MemcacheProvider implements Cache
 
     public function __construct(LoggingMemcache $memcache)
     {
+        if($memcache == null ){
+            throw new \InvalidArgumentException();
+        }
         $this->memcache = $memcache;
     }
 
