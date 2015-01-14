@@ -13,8 +13,9 @@
     {{ form_end(searchForm) }}
 {% endblock %}
     {% block body %}
-        {{ form_errors(searchForm) }}
-        {% for r in res %}
-            {{ r.id }}
-        {% endfor %}
+        <ul class="list-group">
+            {% for r in res %}
+                <li class="list-group-item"><a href="{{ r.url }}">{{ r.title }} [ {{ r.created_at }}]</a></li>
+            {% endfor %}
+        </ul>
     {% endblock body %}

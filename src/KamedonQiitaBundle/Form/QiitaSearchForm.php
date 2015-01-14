@@ -18,7 +18,10 @@ class QiitaSearchForm extends AbstractType
         $builder
             ->add('q', null, array('label' => 'q'))
             ->add('category', 'choice', [
-                'choices' => ['item' => '投稿', 'tag' => 'タグ'],
+                'choices' => [
+                    'item' => '投稿',
+//                    'tag' => 'タグ'
+                ],
                 'label' => 'タグ'
             ])
             ->add('submit', 'submit');

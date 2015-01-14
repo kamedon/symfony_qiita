@@ -84,4 +84,5 @@ class QiitaApi
         return json_decode($res);
     }
 
+
 }
